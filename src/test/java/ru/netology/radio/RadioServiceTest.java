@@ -18,6 +18,14 @@ public class RadioServiceTest {
 
         Assertions.assertEquals(9, radio.getCurrentStationNumber());
     }
+
+    @Test
+    public void shouldSetConstructor() {
+        Radio radio = new Radio(15);
+        radio.setCurrentStationNumber(15);
+        Assertions.assertEquals(14, radio.getCurrentStationNumber());
+    }
+
     //Radio-station work tests
 
     @Test
